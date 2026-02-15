@@ -1,12 +1,16 @@
-var elemDiv = document.createElement("div");
-elemDiv.id = "vue-app";
-document.body.appendChild(elemDiv);
+console.log("hello content");
 
-// version 6.6.3
-inject("rxjs.js");
-inject("inject.js", true);
+createVueRoot();
 
-/////////////////// functions
+inject("inject-vite.js");
+
+///////////////// functions
+
+function createVueRoot() {
+  var elemDiv = document.createElement("div");
+  elemDiv.id = "vue-app";
+  document.body.appendChild(elemDiv);
+}
 
 function inject(filename, isModule) {
   var s = document.createElement("script");
