@@ -3754,7 +3754,7 @@ const mc = {
             if (this.descriptionActive)
                 return `
         <style>
-          #below > *:not(.watch-active-metadata, #panels, #playlist), #comment-teaser {
+          #below > .box > *:not(.watch-active-metadata, ytd-watch-metadata, #panels, #playlist), #comment-teaser {
             height: 0;
             overflow: hidden;
             margin: 0;
@@ -3765,7 +3765,7 @@ const mc = {
             if (this.commentsActive)
                 return `
         <style>
-          #below > *:not(#comments, #chat-container) {
+          #below > .box > *:not(#comments, #chat-container), #below > #playlist {
             height: 0;
             overflow: hidden;
             margin: 0;
@@ -3776,7 +3776,7 @@ const mc = {
             if (this.relatedActive)
                 return `
         <style>
-          #below > *:not(#related) {
+          #below > .box > *:not(#related), #below > #playlist {
             height: 0;
             overflow: hidden;
             margin: 0;
