@@ -3754,7 +3754,7 @@ const mc = {
             if (this.descriptionActive)
                 return `
         <style>
-          #below > .box > *:not(.watch-active-metadata, ytd-watch-metadata, #panels, #playlist), #comment-teaser {
+          #below > .box > *:not(.watch-active-metadata, ytd-watch-metadata, #panels, #playlist), #comment-teaser, #chat-container {
             height: 0;
             overflow: hidden;
             margin: 0;
@@ -3776,7 +3776,7 @@ const mc = {
             if (this.relatedActive)
                 return `
         <style>
-          #below > .box > *:not(#related), #below > #playlist {
+          #below > .box > *:not(#related), #below > #playlist, #chat-container {
             height: 0;
             overflow: hidden;
             margin: 0;
