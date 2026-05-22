@@ -3765,7 +3765,7 @@ const mc = {
             if (this.commentsActive)
                 return `
         <style>
-          #below > .box > *:not(#comments, #chat-container), #below > #playlist {
+          #below > .box > *:not(#comments, #chat-container), #below > #playlist, #panels {
             height: 0;
             overflow: hidden;
             margin: 0;
@@ -3776,7 +3776,7 @@ const mc = {
             if (this.relatedActive)
                 return `
         <style>
-          #below > .box > *:not(#related), #below > #playlist, #chat-container {
+          #below > .box > *:not(#related), #below > #playlist, #chat-container, #panels {
             height: 0;
             overflow: hidden;
             margin: 0;
